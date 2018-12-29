@@ -61,10 +61,6 @@ h6 {
     margin: 0 auto;
 }
 
-.bg-light-gray {
-    background-color: #f7f7f7;
-}
-
 .bg-darkest-gray {
     background-color: #222;
 }
@@ -170,13 +166,12 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
-
-
-
-aside.clients img {
+#modals {
+    display: none;
+}
+.clients img {
     margin: 50px auto;
 }
-
 
 footer {
     padding: 25px 0;

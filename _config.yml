@@ -28,63 +28,11 @@ paginate: 10
 paginate_path: "/blog/:num/"
 permalink: pretty
 markdown: kramdown
-
+excerpt_separator: ""   # Workaround for https://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed/
+permalink: /:title ## disables post output
 sass:
     style: compressed
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      _options:
-        content:
-          width: 1500
-          height: 2500
-  -
-    scope:
-      path: ""
-      type: "staff_members"
-    values:
-      _options:
-        image_path:
-          width: 600
-          height: 600
-  -
-    scope:
-      path: ""
-    values:
-      layout: "page"
-  -
-    scope:
-      path: "index.html"
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "contact.html"
-    values:
-      full_width: true
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: github
-    url: https://github.com/r3dlin3/agency-jekyll-theme
-  - title: linkedin
-    url: http://linkedin.com
-  - title: facebook
-    url: http://facebook.com
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
-
-# jekyll-archives:
-#   enabled:
-#     - categories
 
 plugins:
   - jekyll-sitemap

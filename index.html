@@ -1,20 +1,41 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% seo %}
 
-  <h1>Posts</h1>
+    {% feed_meta %}
+    
+    {% include site-favicons.html %}
+    {% include site-styles.html %}
+    {% if jekyll.environment == 'production' and site.google_analytics_key != '' %}{% include site-analytics.html %}{% endif %}
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
+
+
+    <body id="page-top" class="index">
+
+    {% include navigation.html %}
+    {% include header.html %}
+
+    {% for page in site.posts reversed %}
+      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+      <!-- Services {{ page.title }} -->
+      <section id="{{ id }}">
+          {{ page.content }}
+      </section>
     {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    {% include footer.html %}
+    {% include site-js.html %}
 
-</div>
+    </body>
+</html>
