@@ -1,8 +1,5 @@
-
 # ----
 # Site
-
-
 title: Awesome Title
 #url: https://y7kim.github.io
 #baseurl: /agency-jekyll-theme/
@@ -17,10 +14,6 @@ author:
   name:
   email: your-email@domain.com
   twitter: # twitter username without the @ symbol
-social:
-  name: Awesome Title
-  links:
-    - https://github.com/r3dlin3/agency-jekyll-theme
 
 # -----
 # Build
@@ -28,8 +21,6 @@ social:
 timezone: Etc/UTC
 
 collections:
-  staff_members:
-    _hide_content: true
   projects:
     _hide_content: true
 
@@ -40,41 +31,6 @@ markdown: kramdown
 
 sass:
     style: compressed
-
-# Team names, titles and social links
-people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
-
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
 
 defaults:
   -
@@ -114,6 +70,8 @@ defaults:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: github
+    url: https://github.com/r3dlin3/agency-jekyll-theme
   - title: linkedin
     url: http://linkedin.com
   - title: facebook
@@ -124,9 +82,9 @@ address:
   - line: 3481 Melrose Place
   - line: Beverly Hills, CA 90210
 
-jekyll-archives:
-  enabled:
-    - categories
+# jekyll-archives:
+#   enabled:
+#     - categories
 
 plugins:
   - jekyll-sitemap
@@ -138,17 +96,3 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
-
-# -----------
-# CloudCannon
-
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
