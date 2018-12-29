@@ -1,24 +1,26 @@
+
 # ----
 # Site
 
-title: Hydra Template
-url: "https://proud-alligator.cloudvent.net"
-baseurl:
+
+title: Awesome Title
+#url: https://y7kim.github.io
+#baseurl: /agency-jekyll-theme/
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: Product marketing template for Jekyll.
+logo: /favicon-32x32.png
+description: Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 author:
   name:
-  email:
+  email: your-email@domain.com
   twitter: # twitter username without the @ symbol
 social:
-  name: Hydra Template
+  name: Awesome Title
   links:
-    - https://github.com/CloudCannon/hydra-jekyll-template
+    - https://github.com/r3dlin3
 
 # -----
 # Build
@@ -32,6 +34,45 @@ collections:
 paginate: 10
 paginate_path: "/blog/:num/"
 permalink: pretty
+markdown: kramdown
+
+sass:
+    style: compressed
+
+# Team names, titles and social links
+people:
+- name: Kay Garland
+  pic: 1
+  position: Lead Designer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
+
+- name: Larry Parker
+  pic: 2
+  position: Lead Marketer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Diana Petersen
+  pic: 3
+  position: Lead Developer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
 
 defaults:
   -
@@ -69,16 +110,26 @@ defaults:
     values:
       full_width: true
 
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: linkedin
+    url: http://linkedin.com
+  - title: facebook
+    url: http://facebook.com
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
 jekyll-archives:
   enabled:
     - categories
 
 plugins:
-  - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-paginate
 
 exclude:
   - Gemfile
