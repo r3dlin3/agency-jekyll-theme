@@ -7,15 +7,20 @@
         font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
         color: $primary-color;
     }
+
     .navbar-collapse {
         border-color: rgba(255, 255, 255, .02);
     }
+
     .navbar-toggle {
         border-color: $primary-color;
         background-color: $primary-color;
+
         .icon-bar {
             background-color: #fff;
-            &:hover, &:focus{
+
+            &:hover,
+            &:focus {
                 background-color: $primary-color;
             }
         }
@@ -67,17 +72,18 @@
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
-    }
 
-    .navbar-default .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
 
-    .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;
+        .navbar-brand {
+            font-size: 2em;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            transition: all .3s;
+        }
+
+        .navbar-nav>.active>a {
+            border-radius: 3px;
+        }
     }
 
     .navbar-default.navbar-shrink {
