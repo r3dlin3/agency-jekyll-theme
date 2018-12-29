@@ -1,8 +1,9 @@
-$brand-color: #4182e4;
-$secondary-brand-color: #4182e4;
-$middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
+// Color settings
+$primary-color: #fed136;
+$secondary-color: #fec503;   
+$secondary-dark: #333;
+$muted: #777;
 
-// Breakpoints
-$tablet: "(min-width: 450px)";
-$mid-point: "(min-width: 620px)";
-$desktop: "(min-width: 768px)";
+// Font Families
+$primary-font: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+$secondary-font: "Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif;
