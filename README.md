@@ -5,7 +5,7 @@ Up-to-date version of [Agency theme](https://github.com/y7kim/agency-jekyll-them
 This theme is theme based on the [Agency bootstrap theme](https://startbootstrap.com/template-overviews/agency/).
 
 This version differs from the original with:
-* Up to date Jekyll (3.7.2) and plugins
+* Up to date Jekyll (3.8.5) and plugins
 * Use of CDN instead of local files for Bootstrap, Bootswatch theme & FontAwesome
 * Add a neat favicons/touch icon
 * Use of SASS
@@ -49,7 +49,7 @@ This upgraded version is based on :
 
     bundle install
     bundle exec jekyll build
-    bundle exec jekyll serve --livereload
+        
 
 ### Sections
 
