@@ -1,78 +1,85 @@
-# Hydra
+# Agency Jekyll vNext theme
 
-Marketing site template for Jekyll. Browse through a [live demo](https://proud-alligator.cloudvent.net/).
-Increase the web presence of your brand with this configurable theme.
+Up-to-date version of [Agency theme](https://github.com/y7kim/agency-jekyll-theme) for [Jekyll](http://jekyllrb.com/).
 
-![Hydra template screenshot](images/_screenshot.png)
+This theme is theme based on the [Agency bootstrap theme](https://startbootstrap.com/template-overviews/agency/).
 
-Hydra was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+This version differs from the original with:
+* Up to date Jekyll (3.7.2) and plugins
+* Use of CDN instead of local files for Bootstrap, Bootswatch theme & FontAwesome
+* Add a neat favicons/touch icon
+* Use of SASS
+* Included file for:
+   * Analytics (site-analytics.html)
+   * To load all CSS (site-styles.html)
+   * To load all JS (site-js.html)
+   * To declare icons (site-favicons.html)
+* Use of collection for projects
+* Use of data for:
+   * Team members
+   * Social icons
+   * Navigation bar
+* Use of plugins for:
+   * SEO tags
+   * RSS Feed
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+> Note: the navigation bar links are not computed automatically (as in https://github.com/t413/SinglePaged) to let user use additional links
 
-## Features
+## Credits
 
-* Contact form
-* Pre-built pages
-* Pre-styled components
-* Blog with pagination
-* Post category pages
-* Disqus comments for posts
-* Staff and author system
-* Configurable footer
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+This upgraded version is based on :
 
-## Setup
+* https://y7kim.github.io/agency-jekyll-theme/
+* https://github.com/CloudCannon/hydra-jekyll-template
+* https://github.com/t413/SinglePaged
+* https://github.com/daviddarnes/alembic
+
+## To do
+
+* [ ] Make Contact form work (e.g. with [FormSpree](https://formspree.io/))
+
+## How to use
 
 1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics and Disqus keys to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+2. Add your Google Analytics to `_config.yml`.
 
 ## Develop
 
-Hydra was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+### Basic Jekyll command:
 
-Install the dependencies with [Bundler](http://bundler.io/):
+    bundle install
+    bundle exec jekyll build
+    bundle exec jekyll serve --livereload
 
-~~~bash
-$ bundle install
-~~~
+### Sections
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+Sections are present in the `_posts` folder.
 
-~~~bash
-$ bundle exec jekyll serve
-~~~
+Almost each section has its own style in 
 
-## Editing
+### Portfolio 
 
-Hydra is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in CloudCannon.
+Portfolio projects is a collection in the folder `_projects`.
 
-### Posts
+Images are in `/images/portfolio`.
 
-* Add, update or remove a post in the *Posts* collection.
-* The **Staff Author** field links to members in the **Staff** collection.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
+### About
 
-### Contact Form
+Images are in `/images/about/`
 
-* Preconfigured to work with CloudCannon, but easily changed to another provider (e.g. [FormSpree](https://formspree.io/)).
-* Sends email to the address listed in company details.
+### Team
 
-### Staff
+Team members info are in the data file `_data/people.yml`.
 
-* Reused around the site to save multiple editing locations.
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
+Images are in `/images/team/`.
 
-### Navigation
+### Navigation bar/links
 
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Navigation* section.
+Links to include can be set in the file `_data/navigation.yml`.
 
-### Footer
 
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Footer* section.
+## Demo
+
+None for this version but the rendering is identical to the 
+ [original one](https://y7kim.github.io/agency-jekyll-theme)
+
