@@ -20,7 +20,7 @@ author:
 social:
   name: Awesome Title
   links:
-    - https://github.com/r3dlin3
+    - https://github.com/r3dlin3/agency-jekyll-theme
 
 # -----
 # Build
@@ -29,6 +29,8 @@ timezone: Etc/UTC
 
 collections:
   staff_members:
+    _hide_content: true
+  projects:
     _hide_content: true
 
 paginate: 10
@@ -150,13 +152,3 @@ social_icons:
   - Twitter
   - YouTube
   - RSS
-
-_comments:
-  map: Update the map location and display settings.
-  latitude: Coordinates for the center marker on the map.
-  longitude: Coordinates for the center marker on the map.
-  zoom: The zoom level for the map.
-  pricing_table: Update the information in the pricing tables.
-  highlight: Emphasis the text
-  color: The background colour used in the plan name and call to action.
-  new_window: Open link in new window
