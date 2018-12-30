@@ -47,8 +47,9 @@ This upgraded version is based on :
 
 ### Basic Jekyll command:
 
-    bundle install
-    bundle exec jekyll build
+   bundle install
+   bundle exec jekyll build
+   bundle exec jekyll serve --livereload
         
 
 ### Sections
