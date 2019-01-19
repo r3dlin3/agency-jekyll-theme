@@ -30,8 +30,12 @@ permalink: pretty
 markdown: kramdown
 excerpt_separator: ""   # Workaround for https://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed/
 permalink: /:title ## disables post output
-#sass:
-#    style: compressed
+
+assets:
+  autoprefixer:
+    browsers:
+    - "last 2 versions"
+    - "IE > 9"
 
 plugins:
   - jekyll-sitemap
